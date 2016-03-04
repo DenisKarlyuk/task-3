@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 
 body{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 /*--> Header > TopBox <--*/
@@ -29,16 +30,18 @@ body{
     display: inline;
 }
 
+.number, .social-links>a{
+    font-size: 11px;
+}
+
 .social-links>a{
     text-decoration: none;
     color: #29bdca;
     margin-right: 20px;
-    font-size: 12.5px;
 }
 
 .number{
     color: #808080;
-    font-size: 11px;
     margin-right: -20px;
 }
 
@@ -62,3 +65,21 @@ a.fa:hover{
 }
 
 /*--> Header > Logo and Nav <--*/
+
+.logo{
+    margin: 50px 0 0 120px;
+}
+
+.logo h1{
+    font-size: 34px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo h1 span{
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+    padding: 0 9px;
+    background: #29bdca;
+    color: #fff;
+    font-weight: 800;
+}

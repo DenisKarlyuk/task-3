@@ -66,8 +66,14 @@ a.fa:hover{
 
 /*--> Header > Logo and Nav <--*/
 
+.center-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .logo{
-    margin: 50px 0 0 120px;
+    margin-left: 120px;
 }
 
 .logo h1{
@@ -78,9 +84,29 @@ a.fa:hover{
 .logo h1 span{
     font-family: 'Open Sans', sans-serif;
     margin-right: 10px;
-    padding: 0 9px;
+    padding: 0 8px 2px 8px;
     background: #29bdca;
     color: #fff;
     font-weight: 800;
+}
+
+nav ul{
+    margin-left: 80px;
+}
+
+nav li{
+    margin-right: 35px;
+    display: inline;
+}
+
+nav li a{
+    color: #808080;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li a:hover{
+    text-decoration: underline;
 }
 

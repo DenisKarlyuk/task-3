@@ -40,7 +40,7 @@ body{
     margin-right: 20px;
 }
 
-.number{
+.social-links span{
     color: #808080;
     margin-right: -20px;
 }
@@ -67,6 +67,7 @@ a.fa:hover{
 /*--> Header > Logo and Nav <--*/
 
 .center-box{
+    height: 140px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,3 +111,54 @@ nav li a:hover{
     text-decoration: underline;
 }
 
+/*--> Header > Title <--*/
+
+.botton-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    height: 37px;
+    background-color: #2095a0;
+    font-size: 11px;
+}
+
+.location span{
+    color: #575757;
+}
+
+.location p{
+    color: #2ff1ff;
+}
+
+.location a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 120px;
+}
+
+.heading{
+    height: 185px;
+    background-color: #29bdca;
+}
+
+.heading h1, .heading h2{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    margin-left: 120px;
+}
+
+.heading h1{
+    line-height:20px;
+    font-weight: bolder;
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.heading h2{
+    font-size: 15px;
+    line-height:0;
+}

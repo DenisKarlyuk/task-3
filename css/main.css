@@ -152,7 +152,8 @@ nav li a:hover{
 }
 
 .heading h1{
-    line-height:20px;
+    margin-top: 26px;
+    line-height:0;
     font-weight: bolder;
     font-size: 28px;
     padding-top: 30px;
@@ -160,19 +161,19 @@ nav li a:hover{
 
 .heading h2{
     font-size: 15px;
-    line-height:0;
 }
 
 /*--> Main <--*/
 
 .content{
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
 }
 
 /*-->Main > Filter <--*/
 
 .filter-box{
+    margin-top: 45px;
     height: 40px;
     background-color: #f5f5f5;
 }
@@ -186,9 +187,9 @@ nav li a:hover{
 }
 
 .filter-box ul li{
+    list-style-type: none;
     line-height: 17px;
     margin: 0 10px 0 5px;
-    display: inline;
 }
 
 /*--> Header > Title --> nav li a <--*/
@@ -199,4 +200,30 @@ nav li a:hover{
 .filter-box li a:hover{
     color: #fff;
     background-color: #29bdca;
+}
+
+/*-->Main > Content <--*/
+
+.img-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-box img{
+    width: 320px;
+}
+
+.img-box figure{
+    margin: 45px 17px 0 0;
+}
+
+.img-box figcaption{
+    line-height: 20px;
+    font-size: 17px;
+    color: #29bdca;
+}
+
+.img-box figcaption span{
+    font-size: 11px;
+    color: #808080;
 }

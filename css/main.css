@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:200);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -49,7 +49,7 @@ body{
     text-decoration: underline;
 }
 
-a.fa{
+.social-links a.fa{
     font-size: 14px;
     background: #E5E5E5;
     line-height:30px;
@@ -202,7 +202,7 @@ nav li a:hover{
     background-color: #29bdca;
 }
 
-/*-->Main > Content <--*/
+/*--> Main > Content <--*/
 
 .img-box{
     display: flex;
@@ -217,7 +217,8 @@ nav li a:hover{
     margin: 45px 17px 0 0;
 }
 
-.img-box figcaption{
+.img-box figcaption a{
+    text-decoration: none;
     line-height: 20px;
     font-size: 17px;
     color: #29bdca;
@@ -226,4 +227,76 @@ nav li a:hover{
 .img-box figcaption span{
     font-size: 11px;
     color: #808080;
+}
+
+/*--> Footer > Buy <--*/
+
+.buy-box{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbf1f4;
+    height: 100px;
+}
+
+.buy-box p{
+    margin-right: 15px;
+    font-size: 19px;
+    color: #2095a0;
+}
+
+.buy-box button{
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2095a0;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+}
+
+.buy-box button:hover{
+    background-color: #1a636e;
+}
+
+/*--> Footer > Social <--*/
+
+.social-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #29bdca;
+}
+
+.social-box span{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.social-box ul a{
+    line-height: 40px;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background-color: #2095a0;
+}
+
+.social-box ul{
+    display: flex;
+}
+
+.social-box ul a:hover{
+    background-color: #1a636e;
+}
+
+.social-box ul li{
+    margin-right: 1px;
+    display: inline;
+    text-align: center;
 }

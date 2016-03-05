@@ -241,12 +241,12 @@ nav li a:hover{
 }
 
 .buy-box p{
-    margin-right: 15px;
     font-size: 19px;
     color: #2095a0;
 }
 
 .buy-box button{
+    margin-left: 15px;
     font-weight: bolder;
     font-size: 15px;
     text-transform: uppercase;
@@ -299,4 +299,106 @@ nav li a:hover{
     margin-right: 1px;
     display: inline;
     text-align: center;
+}
+
+/*--> Footer > Inset <--*/
+
+.inset-box{
+    background-color: #444444;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 11px;
+    color: #a7a1a0;
+}
+
+.inset-box h2{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.inner-box span{
+    color: #dfdfdf;
+}
+
+.inner-box:nth-of-type(2) span{
+    margin-left: 83%;
+}
+
+.inner-box:nth-of-type(2) p{
+    background: #333333;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.inner-box:nth-of-type(2) a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #dfdfdf;
+    margin-bottom: 40px;
+}
+
+.inner-box:nth-of-type(2) a:hover{
+    background-color: #444444;
+    text-decoration: underline;
+}
+
+.inset-box input{
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    color: #333333;
+    width: 80%;
+    height: 30px;
+}
+
+.inset-box button{
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc6c5;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 12px 11px 12px;
+}
+
+.inset-box button:hover{
+    background-color: #a7a1a0;
+}
+
+/*--> Footer > Footer <--*/
+
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    height: 45px;
+}
+
+.footer-box ul li{
+    margin-left: 15px;
+    display: inline;
+}
+
+.footer-box ul a{
+    text-transform: uppercase;
+}
+
+.footer-box a:hover{
+    text-decoration: underline;
+}
+
+.footer-box ul a, .footer-box span{
+    color: #a7a1a0;
+    font-size: 11px;
+}
+
+.footer-box a, .footer-box ul a{
+    text-decoration: none;
+    color: #ececec;
+}
+
+.footer-box ul, .footer-box span{
+    margin: 0 100px;
 }

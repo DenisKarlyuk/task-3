@@ -163,12 +163,14 @@ nav li a:hover{
     line-height:0;
 }
 
-/*-->Main > Filter <--*/
+/*--> Main <--*/
 
 .content{
     margin: 0 auto;
     width: 80%;
 }
+
+/*-->Main > Filter <--*/
 
 .filter-box{
     height: 40px;
@@ -189,6 +191,7 @@ nav li a:hover{
     display: inline;
 }
 
+/*--> Header > Title --> nav li a <--*/
 .filter-box li a{
     padding: 7px;
 }

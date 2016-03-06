@@ -415,9 +415,13 @@ nav li a:hover{
 
 @media screen and (max-width: 785px){
 
+    .inner-box:nth-of-type(2) span{
+        margin-left: 0;
+    }
+
     .inset-box input{
         font-size: 10px;
-        width: 80%;
+        width: 75%;
         height: 20px;
     }
 
@@ -447,7 +451,7 @@ nav li a:hover{
     }
 
     .filter-box li a{
-        font-size: 9px;
+        font-size: 11px;
     }
 
     nav ul{
@@ -469,6 +473,10 @@ nav li a:hover{
 
     nav ul:hover li{
         display: block;
+    }
+
+    .content{
+        width: 100%;
     }
 
 }

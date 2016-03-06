@@ -5,62 +5,73 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+* a{
+    text-decoration: none;
+}
+
+* li{
+    list-style-type: none;
+}
+
+.current i{
+    font-size: 25px;
+}
+
+.current{
+    display: none;
+}
 
 /*--> Header > TopBox <--*/
 
-.top-box {
-    background-color: #f5f5f5;
-}
-
-.social-links{
+.top-box{
     margin:0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    background-color: #f5f5f5;
 }
 
-.social-links ul{
+.top-box ul{
     display: flex;
     margin:0 10% 0 0;
 }
 
-.social-links ul li{
+.top-box ul li{
     margin-left: 1px;
     display: inline;
 }
 
-.number, .social-links>a{
+.number, .top-box>a{
     font-size: 11px;
 }
 
-.social-links>a{
-    text-decoration: none;
+.top-box>a{
     color: #29bdca;
     margin-right: 20px;
 }
 
-.social-links span{
+.top-box span{
     color: #808080;
     margin-right: -20px;
 }
 
-.social-links>a:hover{
+.top-box>a:hover{
     text-decoration: underline;
 }
 
-.social-links a.fa{
+.top-box i.fa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     background: #E5E5E5;
-    line-height:30px;
-    text-align: center;
     color: #808080;
-    text-decoration: none;
     height: 30px;
     width: 30px;
 }
 
-a.fa:hover{
+.top-box i.fa:hover{
     background: #d7d7d7;
 }
 
@@ -74,7 +85,7 @@ a.fa:hover{
 }
 
 .logo{
-    margin-left: 120px;
+    margin-left: 11%;
 }
 
 .logo h1{
@@ -92,18 +103,21 @@ a.fa:hover{
 }
 
 nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     margin-left: 80px;
 }
 
 nav li{
     margin-right: 35px;
-    display: inline;
 }
 
 nav li a, .filter-box li a{
     color: #808080;
     font-size: 13px;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -113,7 +127,7 @@ nav li a:hover{
 
 /*--> Header > Title <--*/
 
-.botton-box{
+.bottom-box{
     display: flex;
     flex-direction: column;
 }
@@ -135,7 +149,6 @@ nav li a:hover{
 }
 
 .location a{
-    text-decoration: none;
     color: #fff;
     margin-left: 120px;
 }
@@ -187,7 +200,6 @@ nav li a:hover{
 }
 
 .filter-box ul li{
-    list-style-type: none;
     line-height: 17px;
     margin: 0 10px 0 5px;
 }
@@ -218,7 +230,6 @@ nav li a:hover{
 }
 
 .img-box figcaption a{
-    text-decoration: none;
     line-height: 20px;
     font-size: 17px;
     color: #29bdca;
@@ -278,9 +289,10 @@ nav li a:hover{
     font-weight: 600;
 }
 
-.social-box ul a{
-    line-height: 40px;
-    text-decoration: none;
+.social-box ul i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width: 40px;
     color: #fff;
@@ -291,7 +303,7 @@ nav li a:hover{
     display: flex;
 }
 
-.social-box ul a:hover{
+.social-box ul i:hover{
     background-color: #1a636e;
 }
 
@@ -323,7 +335,7 @@ nav li a:hover{
 }
 
 .inner-box:nth-of-type(2) span{
-    margin-left: 83%;
+    margin-left: 70%;
 }
 
 .inner-box:nth-of-type(2) p{
@@ -334,7 +346,6 @@ nav li a:hover{
 
 .inner-box:nth-of-type(2) a{
     font-size: 12px;
-    text-decoration: none;
     color: #dfdfdf;
     margin-bottom: 40px;
 }
@@ -395,10 +406,69 @@ nav li a:hover{
 }
 
 .footer-box a, .footer-box ul a{
-    text-decoration: none;
     color: #ececec;
 }
 
 .footer-box ul, .footer-box span{
     margin: 0 100px;
+}
+
+@media screen and (max-width: 785px){
+
+    .inset-box input{
+        font-size: 10px;
+        width: 80%;
+        height: 20px;
+    }
+
+    .inset-box button{
+        font-size: 10px;
+        padding: 7px 7px 7px 7px;
+    }
+
+    .inset-box{
+        font-size: 60%;
+    }
+
+    .footer-box{
+       justify-content: center;
+    }
+
+    .footer-box span{
+        margin: 0;
+    }
+
+    .footer-box ul{
+        display: none;
+    }
+
+    .filter-box ul li{
+        margin-right: 0;
+    }
+
+    .filter-box li a{
+        font-size: 9px;
+    }
+
+    nav ul{
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: -10px 0 0 10%;
+        position: absolute;
+    }
+
+    nav li{
+        display: none;
+    }
+
+    .current{
+        display: block;
+    }
+
+    nav ul:hover li{
+        display: block;
+    }
+
 }
